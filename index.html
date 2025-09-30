@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Marcell Kapas - Portfolio (HW5)</title> 
+  <link rel="stylesheet" href="styles.css"> 
+</head> 
+<body> 
+  <div id="spinner"></div> 
+  <div class="grid-container"> 
+    
+    <header class="header"> 
+      <span>Marcell Kapas - Portfolio</span> 
+      <span class="hamburger" onclick="toggleMenu()">☰</span> 
+    </header> 
+    
+    <nav class="sidebar" id="sidebar"> 
+      <ul> 
+        <li><a href="#summary">Summary</a></li> 
+        <li><a href="#education">Education</a></li> 
+        <li><a href="#experience">Experience</a></li> 
+        <li><a href="#skills">Skills</a></li> 
+        <li><a href="#projects">Projects</a></li> 
+        <li><a href="#contact">Contact</a></li> 
+        <li><a href="#video">Intro Video</a></li> 
+      </ul> 
+      <a href="https://drive.google.com/file/d/1vlo3JDYiwd0hd0X4Jn9nS0Nye90zkOhF/view?usp=sharing" target="_blank"> 
+        <button class="resume-btn">Download Resume</button> 
+      </a> 
+    </nav> 
+    
+    <main class="main"> 
+      <section id="summary"> 
+        <h2>Summary</h2> 
+        <p>Informatics major at NAU. Passionate about technology, problem-solving, and building practical solutions through software.</p> 
+      </section> 
+      
+      <section id="education"> 
+        <h2>Education</h2> 
+        <table> 
+          <tr><th>Institution</th><th>Degree/Field</th><th>Duration</th></tr> 
+          <tr><td>Northern Arizona University</td><td>Bachelor of Science in Informatics</td><td>2023 - Present</td></tr> 
+        </table> 
+      </section> 
+      
+      <section id="experience"> 
+        <h2>Experience</h2> 
+        <table> 
+          <tr><th>Classes / Experience</th><th>Role</th><th>Duration</th></tr> 
+          <tr><td>CS 105, 126, 136, 200, 205, 212, 305</td><td>Informatics Student</td><td>2023 - Present</td></tr> 
+        </table> 
+      </section> 
+      
+      <section id="skills"> 
+        <h2>Skills</h2> 
+        <div class="skills-container"> 
+          <div>Python</div> 
+          <div>Java</div> 
+          <div>C++</div> 
+          <div>HTML</div> 
+          <div>CSS</div> 
+          <div>Problem Solving</div> 
+          <div>Communication</div> 
+          <div>Innovative Thinking</div> 
+        </div> 
+      </section> 
+      
+      <section id="projects"> 
+        <h2>Projects</h2> 
+        <div class="projects-grid"> 
+          <div class="project"> 
+            <h3>Portfolio Website</h3> 
+            <p>Developed a personal portfolio website to showcase projects and skills.</p> 
+            <img src="projects.jpg" alt="Project screenshot"> 
+          </div> 
+          <div class="project"> 
+            <h3>Homepage Design</h3> 
+            <p>Created a responsive homepage design using HTML and CSS.</p> 
+            <img src="homepage2.png" alt="Homepage screenshot"> 
+          </div> 
+          <div class="project"> 
+            <h3>Contact Page</h3> 
+            <p>Designed a contact form page with CSS layout techniques.</p> 
+            <img src="contactpic.png" alt="Contact section screenshot"> 
+          </div> 
+        </div> 
+      </section> 
+      
+      <section id="video"> 
+        <h2>Introduction Video</h2> 
+        <iframe height="300" src="https://www.youtube.com/embed/IjEmCxRWBRc" title="Intro Video" frameborder="0" allowfullscreen></iframe> 
+      </section> 
+    </main> 
+    
+    <footer class="footer" id="contact"> 
+      <p>Email: <a href="mailto:mk2487@nau.edu">mk2487@nau.edu</a> | Phone: <a href="tel:808-276-8613">808-276-8613</a> | GitHub: <a href="https://github.com/mk2487">github.com/mk2487</a></p> 
+    </footer> 
+  </div> 
+  
+  <script> 
+    window.addEventListener("load", () => { 
+      document.getElementById("spinner").style.display = "none"; 
+    }); 
+    
+    function toggleMenu() { 
+      document.getElementById("sidebar").classList.toggle("show"); 
+    } 
+  </script> 
+</body> 
+</html>
